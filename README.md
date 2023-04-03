@@ -1,4 +1,4 @@
-# SGForms
+# Forms-to-Slack
 
 ### Description:
 Simple script to post Google Forms responses to a Slack channel
