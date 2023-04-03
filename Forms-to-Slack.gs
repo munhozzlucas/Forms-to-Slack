@@ -17,7 +17,7 @@ function onFormSubmit(event) {
   // Loop through each item response and add it to the formData object.
   for (var i = 0; i < itemResponses.length; i++) {
     var thisItem = itemResponses[i];
-    var question = thisItem.getItem().getTitle();
+    var question = thisItem.getItem().getTitle().trim() + ":";
     var answer = thisItem.getResponse();
     formData[question] = answer;
     
