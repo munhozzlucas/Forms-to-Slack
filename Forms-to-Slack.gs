@@ -39,6 +39,9 @@ function onFormSubmit(event) {
       }
       
       formData[question] = fileUrls;
+    } else if (Array.isArray(answer)) {
+      // If the answer is an array, convert it to a comma-separated string.
+      formData[question] = answer.join(', ');
     } else {
       formData[question] = answer;
     }
